@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+</head>
+<body>
+
+    <h1>INFO SHEET</h1>
+
+    <form action="process-form.php" method="post">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="LSSID">LSSID</label>
+        <input type="LSSID" id="LSSID" name="LSSID">
+
+        <label for="priority">Medical History</label>
+        <select id="priority" name="priority">
+            <option value="1">yes</option>
+            <option value="2" selected>no</option>
+            <option value="3">other</option>
+        </select>
+
+        <label for="message">Description if yes</label>
+        <textarea id="message" name="message"></textarea>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <label>
+                <input type="radio" name="type" value="1" checked>
+                Male
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="type" value="2">
+                Female
+            </label>
+
+        </fieldset>
+
+        <label>
+            <input type="checkbox" name="terms">
+            I am or will be at least 15+ years old by the last day
+        </label>
+
+        <br>
+
+        <button>Send</button>
+
+    </form>
+
+</body>
+</html>
